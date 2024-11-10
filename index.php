@@ -1,3 +1,9 @@
+<?php
+    require 'koneksi.php';
+    $queryProduk = mysqli_query($con, "SELECT id, nama, foto, detail FROM produk LIMIT 6");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,19 +72,24 @@
         <div class="container text-center">
             <h3>Produk</h3>
             <div class="row mt-5"> 
+                <?php while($data = mysqli_fetch_array($queryProduk)) { ?>
                 <div class="col-sm-6 col-md-4 mb-3">
                     <div class="card">
-                        <img src="assets/tangga.jpg" class="card-img-top" alt="tangga" style="height: 300px; object-fit: cover;">
+                        <img src="image/<?php echo $data['foto']; ?>" class="card-img-top" alt="<?php echo $data['nama']; ?>" style="height: 250px; object-fit: cover; object-position: center">
                         <div class="card-body"> 
-                            <h5>Card Title</h5>
-                            <p class="card-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing   elit</p>
-                            <a href="#" class="btn btn-primary">Detail</a>
+                            <h5><?php echo $data['nama']; ?></h5>
+                            <p class="card-text text-truncate"><?php echo $data['detail']; ?></p>
+                            <a href="produk-detail.php?nama=<?php echo $data['nama']; ?>" class="btn secondary-color">Detail Product</a>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
             </div>
+            <a class="btn btn-outline-warning mt-3" href="produk.php">See More</a>
         </div>
     </div>
+
+    <?php  require 'footer.php';?>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>

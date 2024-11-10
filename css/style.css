@@ -37,3 +37,11 @@
     color: #EEC373;
     text-decoration: none;
 }
+
+.content-subscribe {
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.content-subscribe a {
+    color: #fff;
+}
