@@ -63,10 +63,6 @@
                 </Select>   
             </div>
             <div>
-                <label for="harga">Harga</label>
-                <input type="number" class="form-control" name="harga" value="<?php echo $data['harga']; ?>" required>
-            </div>
-            <div>
                 <label for="currentFoto">Image Product</label>
                 <img  
                 src="../image/<?php echo $data['foto']; ?>"
@@ -112,7 +108,6 @@
             if(isset($_POST['simpan'])) {
                 $nama = htmlspecialchars($_POST['nama']);
                 $kategori = htmlspecialchars($_POST['kategori']);
-                $harga = htmlspecialchars($_POST['harga']);
                 $detail = htmlspecialchars($_POST['detail']);
                 $ketersediaan_stok = htmlspecialchars($_POST['ketersediaan_stok']);
 
@@ -126,14 +121,14 @@
                 $new_name = $random_name . "." . $imageFileType;
 
                 // Mengecek Required sisi BE
-                if(empty($nama) || empty($kategori) || empty($harga) ) {
+                if(empty($nama) || empty($kategori) ) {
                     ?>
                         <div class="alert alert-warning mt-3" role="alert"></div>
                             Nama dan Kategori wajib diisi
                         </div>
                     <?php
                 } else {
-                    $queryUpdate = mysqli_query($con, "UPDATE produk SET kategori_id = '$kategori', nama = '$nama', harga = '$harga',  detail = '$detail', ketersediaan_stok = '$ketersediaan_stok' WHERE id = '$id'");
+                    $queryUpdate = mysqli_query($con, "UPDATE produk SET kategori_id = '$kategori', nama = '$nama',  detail = '$detail', ketersediaan_stok = '$ketersediaan_stok' WHERE id = '$id'");
 
                     if($nama_file != "") {
                         if($image_size > 1000000) {
@@ -178,7 +173,7 @@
                     <div class="alert alert-primary mt-3" role="alert">
                         Product Berhasil Dihapus
                     </div>
-                    <meta http-equiv="refresh" content="1; url=product.php">
+                    <meta http-equiv="refresh" content="1; url=produk.php">
                 <?php
                 } else {
                     echo mysqli_error($con);

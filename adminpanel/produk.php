@@ -76,11 +76,6 @@
                         ?>
                     </select>
                 </div>
-                <!-- Masukkan Harga (number) -->
-                <div>
-                    <label for="harga">Harga</label>
-                    <input type="number" class="form-control" name="harga">
-                </div>
                 <!-- Input image -->
                 <div>
                     <label for="image">Image</label>
@@ -109,7 +104,6 @@
                 if(isset($_POST['simpan'])) {
                     $nama = htmlspecialchars($_POST['nama']);
                     $kategori = htmlspecialchars($_POST['kategori']);
-                    $harga = htmlspecialchars($_POST['harga']);
                     $detail = htmlspecialchars($_POST['detail']);
                     $ketersediaan_stok = htmlspecialchars($_POST['ketersediaan_stok']);
 
@@ -122,7 +116,7 @@
                     $random_name = generateRandomString(20);
                     $new_name = $random_name . "." . $imageFileType;
 
-                    if(empty($nama) || empty($kategori) || empty($harga) ) {
+                    if(empty($nama) || empty($kategori) ) {
                         ?>
                             <div class="alert alert-warning mt-3" role="alert">
                                 Nama dan Kategori Wajib Diisi
@@ -150,7 +144,7 @@
                         }
                     }
                     // Memasukan data ke product tabel
-                    $queryTambahProduk = mysqli_query($con, "INSERT INTO produk (kategori_id, nama, harga, foto, detail, ketersediaan_stok) VALUES('$kategori', '$nama', '$harga', '$new_name', '$detail', '$ketersediaan_stok')");
+                    $queryTambahProduk = mysqli_query($con, "INSERT INTO produk (kategori_id, nama, foto, detail, ketersediaan_stok) VALUES('$kategori', '$nama', '$new_name', '$detail', '$ketersediaan_stok')");
                         
                     if($queryTambahProduk) {
                     ?>
@@ -178,7 +172,6 @@
                             <th>No.</th>
                             <th>Nama Product</th>
                             <th>Category</th>
-                            <th>Harga</th>
                             <th>ketersediaan Stok</th>
                             <th>Action</th>
                         </tr>
@@ -199,7 +192,6 @@
                                         <td><?php echo $jumlah; ?></td>
                                         <td><?php echo $data['nama']; ?></td>
                                         <td><?php echo $data['nama_kategori']; ?></td>
-                                        <td><?php echo $data['harga']; ?></td>
                                         <td><?php echo $data['ketersediaan_stok']; ?></td>
                                         <td>
                                             <a href="produk-detail.php?p=<?php echo $data['id']; ?>" 

@@ -1,0 +1,39 @@
+.primary-color {
+    background-color: #876445;
+}
+
+.secondary-color {
+    background-color: #CA965C;
+}
+
+.thirth-color {
+    background-color: #EEC373;
+}
+
+.fourth-color {
+    background-color: #F4DFBA;
+}
+
+.banner {
+    height: 80vh;
+}
+
+.highlighted-kategori {
+    height: 250px;
+}
+
+.kategori-tangga {
+    background-color: #876445;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-decoration {
+    color: black;
+    text-decoration: none;
+}
+
+.no-decoration:hover {
+    color: #EEC373;
+    text-decoration: none;
+}
