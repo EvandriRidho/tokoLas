@@ -70,7 +70,7 @@
             </div>
             <div>
                 <label for="image">Image</label>
-                <input type="file" name="image" id="image" class="form-control">
+                <input type="file" name="image" id="image" class="form-control" required>
                 <img src>
             </div>
             <div>
@@ -124,7 +124,7 @@
                 if(empty($nama) || empty($kategori) ) {
                     ?>
                         <div class="alert alert-warning mt-3" role="alert"></div>
-                            Nama dan Kategori wajib diisi
+                            Field Tidak Boleh Kosong
                         </div>
                     <?php
                 } else {

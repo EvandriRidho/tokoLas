@@ -79,12 +79,14 @@
                 <!-- Input image -->
                 <div>
                     <label for="image">Image</label>
-                    <input type="file" name="image" id="image" class="form-control" >
+                    <input type="file" name="image" id="image" class="form-control" required>
                 </div>
                 <!-- Detail Product -->
                 <div>
                     <label for="detail">Detail</label>
-                    <textarea name="detail" id="detail" class="form-control" cols="30" rows="10"></textarea>
+                    <textarea name="detail" id="detail" class="form-control" cols="30" rows="10" required>
+                        
+                    </textarea>
                 </div>
                 <!-- Ketersedian Stock -->
                 <div>
@@ -119,7 +121,7 @@
                     if(empty($nama) || empty($kategori) ) {
                         ?>
                             <div class="alert alert-warning mt-3" role="alert">
-                                Nama dan Kategori Wajib Diisi
+                                Field Tidak Boleh Kosong
                             </div>
                         <?php
                     } else {

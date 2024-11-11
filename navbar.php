@@ -6,16 +6,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="../adminpanel">Home</a>
+                    <a class="nav-link me-4" href="index.php">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="kategori.php">Category</a>
+                    <a class="nav-link me-4" href="produk.php">Produk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="produk.php">Product</a>
+                    <a class="nav-link me-4" href="tentang-kami.php">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="./adminpanel/">Admin</a>
+                    <a class="nav-link me-4" href="./adminpanel/login.php">Admin</a>
                 </li>
             </ul>
         </div>

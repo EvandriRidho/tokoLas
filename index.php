@@ -25,7 +25,7 @@
             <div class="col-md-8 offset-md-2">
                 <form method="GET" action="produk.php">
                     <div class="input-group input-group-lg my-4">
-                        <input type="text" class="form-control" placeholder="Cari Produk" aria-label="Cari Produk" aria-describedby="basic-addon2" name="keyword">
+                        <input type="text" class="form-control" placeholder="Cari Produk" aria-label="Cari Produk" aria-describedby="basic-addon2" name="keyword" autocomplete="off">
                         <button type="submit" class="btn thirth-color">Search</button>
                     </div>
                 </form>

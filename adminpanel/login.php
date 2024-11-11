@@ -31,7 +31,7 @@
             <form action="" method="POST">
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" class="form-control">
+                    <input type="text" name="username" id="username" class="form-control" autocomplete="off">
                 </div>
                 <div>
                     <label for="password">Password</label>

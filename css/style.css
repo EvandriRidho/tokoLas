@@ -45,3 +45,18 @@
 .content-subscribe a {
     color: #fff;
 }
+
+.banner-produk {
+    height: 30vh;
+}
+
+.banner-tentang-kami {
+    height: 30vh;
+}
+
+.produk-terkait-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
