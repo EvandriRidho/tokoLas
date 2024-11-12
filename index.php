@@ -97,7 +97,9 @@
                         <div class="card-body"> 
                             <h5><?php echo $data['nama']; ?></h5>
                             <p class="card-text text-truncate"><?php echo $data['detail']; ?></p>
-                            <a href="produk-detail.php?nama=<?php echo $data['nama']; ?>" class="btn secondary-color">Detail Product</a>
+                            <a href="https://wa.me/6285959133189" target="_blank" class="btn secondary-color">
+                                Detail Price Click Me!
+                            </a>
                         </div>
                     </div>
                 </div>
