@@ -37,7 +37,7 @@
     <!-- Banner -->
     <div class="container-fluid banner-produk d-flex align-items-center">
         <div class="container">
-            <h1 class="text-center">produk</h1>
+            <h1 class="text-center">Aneka Produk Las</h1>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
             
             <!-- Produk -->
             <div class="col-lg-9">
-                <h3 class="text-center mb-3">Produk</h3>
+                <h3 class="text-center mb-3">Aneka Produk Las</h3>
                 <div class="row">
                     <?php
                         if($countData < 1) {

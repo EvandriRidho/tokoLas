@@ -63,7 +63,7 @@
 
                 <div class="about-text">
                     <p class="fs-5 mt-3">
-                        Layanan jasa bengkel las listrik untuk kebutuhan aksesoris rumah, kantor, apartemen, dan fasilitas umum yang membutuhkan produk-produk besi dengan model tertentu.
+                        Karya Putra Collection adalah perusahaan yang menyediakan layanan jasa bengkel las listrik khusus untuk kebutuhan aksesoris rumah, kantor, apartemen, dan fasilitas umum. Kami berkomitmen untuk memberikan produk-produk besi berkualitas tinggi dengan desain yang sesuai dengan model dan kebutuhan klien. Sejak berdiri pada tahun 2017, Karya Putra Collection telah melayani berbagai proyek, baik skala kecil maupun besar, dengan mengutamakan keakuratan dalam pembuatan serta ketahanan produk yang kami hasilkan. Tim kami yang berpengalaman siap membantu mewujudkan berbagai macam desain aksesoris besi, mulai dari pagar, railing, hingga berbagai produk besi lainnya, yang dapat disesuaikan dengan estetika dan fungsionalitas ruang yang Anda inginkan.
                     </p>
                     <div class="col-lg-6">
                         <div class="social-media mt-4 d-flex justify-content-md-start justify-content-center gap-4">
