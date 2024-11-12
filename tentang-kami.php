@@ -7,9 +7,45 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom styling for the layout */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+        .about-map {
+            flex: 1;
+            height: 400px;
+            margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+            }
+            .about-map {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-media a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-    <?php require 'navbar.php' ?>
+    <?php require 'navbar.php'; ?>
 
     <div class="container-fluid banner-tentang-kami d-flex align-items-center">
         <div class="container">
@@ -18,17 +54,37 @@
     </div>
 
     <div class="container-fluid py-5">
-        <div class="container fs-5 text-center">
-            <p >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-            </p>
+        <div class="container">
+            <div class="about-container">
+                <div class="about-map">
+                    <!-- Google Maps Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.056971150441!2d144.95373631531626!3d-37.81720977975197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d470f1f8f4f%3A0x5045675218ce6e0!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1614564347852!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="about-text">
+                    <p class="fs-5 mt-3">
+                        Layanan jasa bengkel las listrik untuk kebutuhan aksesoris rumah, kantor, apartemen, dan fasilitas umum yang membutuhkan produk-produk besi dengan model tertentu.
+                    </p>
+                    <div class="col-lg-6">
+                        <div class="social-media mt-4 d-flex justify-content-md-start justify-content-center gap-4">
+                            <a href="https://wa.me/6285959133189" target="_blank">
+                                <i class="fab fa-whatsapp fs-2" style="color: black;"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram fs-2" style="color: black;"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-cart-shopping fs-2" style="color: black;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <?php require 'footer.php';?>
+    <?php require 'footer.php'; ?>
+    
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
 </body>

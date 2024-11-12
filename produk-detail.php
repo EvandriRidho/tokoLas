@@ -8,9 +8,6 @@
     $queryProdukTerkait = mysqli_query($con, "SELECT * FROM produk WHERE kategori_id = '$produk[kategori_id]' AND id!= '$produk[id]' LIMIT 4");
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +32,11 @@
                     <h1><?php echo $produk['nama']; ?></h1>
                     <p  class="fs-5"><?php echo $produk['detail']; ?></p>
                     <p>Status Ketersediaan : <strong><?php echo $produk['ketersediaan_stok']; ?></strong></p>
+                    <button class="btn secondary-color">
+                        <a href="https://wa.me/6285959133189" target="_blank" style="color: black ; text-decoration: none">
+                            For Detail Price Click Me!
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -47,9 +49,7 @@
             <div class="row">
                 <?php while($data = mysqli_fetch_array($queryProdukTerkait)) {  ?>
                     <div class="col-md-6 col-lg-3 mb-3">
-                        <a href="produk-detail.php?nama=<?php echo $data['nama']; ?>">
                             <img src="image/<?php echo $data['foto']; ?>" alt="<?php echo $data['nama']; ?>" class="img-fluid img-thumbnail produk-terkait-image">
-                        </a>
                     </div>
                 <?php } ?>
             </div>

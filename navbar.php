@@ -1,10 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark primary-color">
     <div class="container">
+        <!-- Bagian Kiri Navbar (selalu terlihat) -->
+        <h2 class="text-white">Karya Putra Collection</h2>
+        
+        <!-- Tombol Hamburger untuk layar kecil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <!-- Bagian collapsible Navbar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Bagian Kanan Navbar -->
+            <ul class="navbar-nav ms-auto my-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link me-4" href="index.php">Beranda</a>
                 </li>

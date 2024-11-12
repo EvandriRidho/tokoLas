@@ -15,11 +15,11 @@
 }
 
 .banner {
-    height: 80vh;
+    height: 100vh;
 }
 
 .highlighted-kategori {
-    height: 250px;
+    height: 100px;
 }
 
 .kategori-tangga {
@@ -27,7 +27,6 @@
     background-size: cover;
     background-position: center;
 }
-
 .no-decoration {
     color: black;
     text-decoration: none;
