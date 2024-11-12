@@ -27,6 +27,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk</title>
+    <link rel="icon" type="image" href="./assets/hammer-solid.svg" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -37,7 +38,7 @@
     <!-- Banner -->
     <div class="container-fluid banner-produk d-flex align-items-center">
         <div class="container">
-            <h1 class="text-center">Aneka Produk Las</h1>
+            <h1 class="text-center text-white">Aneka Produk Las</h1>
         </div>
     </div>
 

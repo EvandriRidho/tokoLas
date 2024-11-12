@@ -15,15 +15,15 @@
 }
 
 .banner {
-    background: li;
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-image.jpg');
 }
 
 .highlighted-kategori {
     height: 100px;
 }
 
-.kategori-tangga {
+.kategori-box {
     background-color: #876445;
     background-size: cover;
     background-position: center;
@@ -47,11 +47,13 @@
 }
 
 .banner-produk {
-    height: 30vh;
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-image.jpg');
 }
 
 .banner-tentang-kami {
-    height: 30vh;
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-image.jpg');
 }
 
 .produk-terkait-image {

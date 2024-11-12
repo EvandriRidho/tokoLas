@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark primary-color">
     <div class="container">
         <!-- Bagian Kiri Navbar (selalu terlihat) -->
-        <h2 class="text-white">Karya Putra Collection</h2>
+        <h2>
+            <a href="index.php" class="text-white" style="text-decoration: none;">Karya Putra Collection</a>
+        </h2>
         
         <!-- Tombol Hamburger untuk layar kecil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

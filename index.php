@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karyaputracollection</title>
+    <link rel="icon" type="image" href="./assets/hammer-solid.svg" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,7 @@
     
     <!-- Banner -->
     <div class="container-fluid banner d-flex align-items-center">
-        <div class="container text-center">
+        <div class="container text-center text-white">
             <h1>Karya Putra Collection</h1>
             <h3>Mau Cari Apa?</h3>
             <div class="col-md-8 offset-md-2">
@@ -41,7 +42,7 @@
             <div class="row mt-5">
                 <?php while($data = mysqli_fetch_array($queryKategori)) { ?>
                 <div class="col-md-4 mb-3">
-                    <div class="highlighted-kategori kategori-tangga d-flex align-items-center justify-content-center">
+                    <div class="highlighted-kategori kategori-box d-flex align-items-center justify-content-center">
                         <h4><a href="produk.php?kategori=<?php echo $data['nama']; ?>" class="no-decoration"><?php echo $data['nama']; ?></a></h4>
                     </div>
                 </div>
@@ -71,10 +72,10 @@
                         <a href="https://wa.me/6285959133189" target="_blank">
                             <i class="fab fa-whatsapp fs-2" style="color: black;"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com/rizall_260?igsh=Z2pza21pazU2dDkw" target="_blank">
                             <i class="fab fa-instagram fs-2" style="color: black;"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://siplah.blibli.com/merchant/dashboard" target="_blank">
                             <i class="fa-solid fa-cart-shopping fs-2" style="color: black;"></i>
                         </a>
                     </div>
