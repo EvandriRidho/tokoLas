@@ -44,26 +44,26 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
                     <a href="index.php" class="no-decoration text-muted">
-                        <i class="fas fa-home"></i> Home</a>
+                        <i class="fas fa-home"></i> Beranda</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                        Product
+                        Produk
                 </li>
             </ol>
         </nav>
 
         <!-- Tambah Product -->
         <div class="my-5 col-12 col-md-6">
-            <h3>Tambah Product</h3>
+            <h3>Tambah Produk</h3>
             <form action="" method="POST" enctype="multipart/form-data">
                 <!-- Masukkan Nama Product -->
                 <div>
-                    <label for="nama">Nama Product</label>
-                    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Product" class="form-control" required autocomplete="off">
+                    <label for="nama">Nama Produk</label>
+                    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Produk" class="form-control" required autocomplete="off">
                 </div>
                 <!-- Input Category -->
                 <div>
-                    <label for="kategori">Category</label>
+                    <label for="kategori">Kategori</label>
                     <select name="kategori" id="kategori" required>
                         <?php 
                             while($data  = mysqli_fetch_array($queryKategori)) {
@@ -79,7 +79,7 @@
                 <!-- Input image -->
                 <div>
                     <label for="image">Image</label>
-                    <input type="file" name="image" id="image" class="form-control" required>
+                    <input type="file" name="image" id="image" class="form-control">
                 </div>
                 <!-- Detail Product -->
                 <div>
@@ -150,8 +150,8 @@
                         
                     if($queryTambahProduk) {
                     ?>
-                        <div class="alert alert-success mt-3" role="alert">
-                            Product Berhasil Disimpan
+                        <div class="alert alert-primary mt-3" role="alert">
+                            Produk Berhasil Disimpan
                         </div>
                         <meta http-equiv="refresh" content="1; url=produk.php">
                     <?php
@@ -166,14 +166,14 @@
 
         <!-- Table List Product -->
         </div class="mt-3 mb-5">
-            <h2>List Products</h2>
+            <h2>List Produk</h2>
             <div class="table-responsive mt-5">
                 <table class="table">
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama Product</th>
-                            <th>Category</th>
+                            <th>Nama Produk</th>
+                            <th>Kategori</th>
                             <th>ketersediaan Stok</th>
                             <th>Action</th>
                         </tr>
@@ -183,7 +183,7 @@
                             if($jumlahProduk == 0) {
                                 ?>
                                     <tr>
-                                        <td colspan="6" class="text-center">Data Product tidak tersedia</td>
+                                        <td colspan="6" class="text-center">Data Produk tidak tersedia</td>
                                     </tr>
                                 <?php
                             } else {

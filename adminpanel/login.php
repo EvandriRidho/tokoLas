@@ -33,13 +33,14 @@
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" class="form-control" autocomplete="off">
                 </div>
-                <div>
+                <div class="my-2">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" class="form-control">
                 </div>
                 <div>
-                    <button class="btn btn-success form-control mt-3" type="submit" name="loginbtn">Login</button>
+                    <button class="btn btn-success form-control my-3" type="submit" name="loginbtn">Login</button>
                 </div>
+                <span>Bukan Admin? <a href="../index.php">Kembali</a></span>
             </form>
         </div>
 
@@ -67,7 +68,7 @@
                     } else {
                         ?>
                             <div class="alert alert-warning" role="alert">
-                                Akun tidak tersedia!
+                                Akun Tidak Ditemukan!
                             </div>
                         <?php
                     }

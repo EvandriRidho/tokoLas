@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <title>Kategori</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 </head>
@@ -29,21 +29,21 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
                     <a href="index.php" class="no-decoration text-muted">
-                        <i class="fas fa-home"></i> Home</a>
+                        <i class="fas fa-home"></i> Beranda</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                        Category
+                        Kategori
                 </li>
             </ol>
         </nav>
 
         <!-- FORM TAMBAH KATEGORI -->
         <div class="my-5 col-12 col-md-6">
-            <h3>Tambah Category</h3>
+            <h3>Tambah Kategori</h3>
             <form action="" method="POST">
                 <div>
-                    <label for="kategori">Category</label>
-                    <input type="text" name="kategori" id="kategori" placeholder="Masukkan Category" class="form-control" required autocomplete="off">
+                    <label for="kategori">Kategori</label>
+                    <input type="text" name="kategori" id="kategori" placeholder="Masukkan Kategori" class="form-control" required autocomplete="off">
                 </div>
                 <div class="mt-3">
                     <button class="btn btn-primary" type="submit" name="simpan_kategori">Simpan</button>
@@ -61,7 +61,7 @@
                     if($jumlahDataKategoriBaru > 0) {
             ?>
                         <div class="alert alert-warning mt-3" role="alert">
-                                Category Sudah Ada
+                                Kategori Sudah Ada
                         </div>
             <?php
                     } else {
@@ -69,7 +69,7 @@
                         if($querySimpan) {
             ?>
                                 <div class="alert alert-primary mt-3" role="alert">
-                                    Category Berhasil Disimpan
+                                    Kategori Berhasil Disimpan
                                 </div>
                                 <!-- Untuk Merefresh page setiap 1 detik -->
                                 <meta http-equiv="refresh" content="1; url=kategori.php">
@@ -83,13 +83,13 @@
         </div>
 
         <div class="mt-3">
-            <h2>List Category</h2>
+            <h2>List Kategori</h2>
             <div class="table-responsive mt-5">
                 <table class="table">
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama Category</th>
+                            <th>Nama Kategori</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -98,7 +98,7 @@
                             if($jumlahKategori == 0) {
                         ?>
                             <tr>
-                                <td colspan="3" class="text-center">Data Category tidak tersedia</td>
+                                <td colspan="3" class="text-center">Data Kategori tidak tersedia</td>
                             </tr>
                         <?php
                             } else {

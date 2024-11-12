@@ -25,7 +25,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Product</title>
+    <title>Detail Produk</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 <style>
@@ -42,11 +42,11 @@
     <div class="col-12 col-md-6 mb-5">
         <form action="" method="POST" enctype="multipart/form-data">
             <div>
-                <label>Nama Product</label>
+                <label>Nama Produk</label>
                 <input type="text" name="nama" id="nama" class="form-control" value="<?php echo $data['nama']; ?>" required autocomplete="off">
             </div>
             <div>
-                <label for="kategori">Category</label>
+                <label for="kategori">Kategori</label>
                 <Select name="kategori" id="kategori" class="form-control" required>
                     <option value="<?php echo $data['kategori_id']; ?>">
                         <?php echo $data['nama_kategori']; ?>
@@ -63,14 +63,14 @@
                 </Select>   
             </div>
             <div>
-                <label for="currentFoto">Image Product</label>
+                <label for="currentFoto">Image Produk</label>
                 <img  
                 src="../image/<?php echo $data['foto']; ?>"
                 alt="img-product" width="100px">
             </div>
             <div>
                 <label for="image">Image</label>
-                <input type="file" name="image" id="image" class="form-control" required>
+                <input type="file" name="image" id="image" class="form-control">
                 <img src>
             </div>
             <div>
@@ -151,8 +151,8 @@
 
                                 if($queryUpdate) {
                                 ?>
-                                    <div class="alert alert-success mt-3" role="alert"></div>
-                                        Product Berhasil Diupdate
+                                    <div class="alert alert-primary mt-3" role="alert">
+                                        Produk Berhasil DiUpdate
                                     </div>
                                     <meta http-equiv="refresh" content="1; url=produk.php">
                                 <?php

@@ -4,16 +4,20 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Bagian Kiri Navbar -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="../adminpanel">Home</a>
+                    <a class="nav-link me-4" href="../adminpanel">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="kategori.php">Category</a>
+                    <a class="nav-link me-4" href="kategori.php">Kategori</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="produk.php">Product</a>
+                    <a class="nav-link me-4" href="produk.php">Produk</a>
                 </li>
+            </ul>
+            <!-- Bagian Kanan Navbar -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link me-4" href="logout.php">Logout</a>
                 </li>
