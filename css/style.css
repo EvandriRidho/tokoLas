@@ -16,7 +16,7 @@
 
 .banner {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
 }
 
 .highlighted-kategori {
@@ -48,12 +48,12 @@
 
 .banner-produk {
     height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
 }
 
 .banner-tentang-kami {
     height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
 }
 
 .produk-terkait-image {

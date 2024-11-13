@@ -54,7 +54,7 @@
         </nav>
 
         <!-- Tambah Product -->
-        <div class="my-5 col-12 col-md-6">
+        <div class="my-5 col-12">
             <h3>Tambah Produk</h3>
             <form action="" method="POST" enctype="multipart/form-data">
                 <!-- Masukkan Nama Product -->

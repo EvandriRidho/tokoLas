@@ -39,7 +39,7 @@
         </nav>
 
         <!-- FORM TAMBAH KATEGORI -->
-        <div class="my-5 col-12 col-md-6">
+        <div class="my-5 col-12">
             <h3>Tambah Kategori</h3>
             <form action="" method="POST">
                 <div>
