@@ -1,5 +1,9 @@
 <?php
-    $con = mysqli_connect("localhost", "root", "", "karya_putra_collections");
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "karya_putra_collections";
+    $con = mysqli_connect($servername, $username, $password, $dbname);
 
     // check connection
     if (mysqli_connect_errno()) {
