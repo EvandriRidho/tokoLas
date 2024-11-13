@@ -51,11 +51,14 @@
                     $username = htmlspecialchars($_POST['username']);
                     $password = htmlspecialchars($_POST['password']);
 
-                    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username' AND password = '$password'");
+                    // Ambil data user dari database berdasarkan username
+                    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'");
                     $countdata = mysqli_num_rows($query);
                     $data = mysqli_fetch_array($query);
+
                     if($countdata > 0) {
-                        if($password === $data['password']) {
+                        // Verifikasi password yang diinput dengan hash yang ada di database
+                        if(password_verify($password, $data['password'])) {
                             $_SESSION['login'] = true;
                             header("Location: index.php");
                             exit();
