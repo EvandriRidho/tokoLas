@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .banner-tentang-kami {
-            background: #343a40;
-            padding: 60px 0;
-            color: white;
-        }
         .about-container {
             margin-top: 30px;
         }
@@ -30,7 +25,7 @@
     <!-- Banner -->
     <div class="container-fluid banner-tentang-kami d-flex align-items-center">
         <div class="container">
-            <h1 class="text-center">Tentang Kami</h1>
+            <h1 class="text-center text-white">Tentang Kami</h1>
         </div>
     </div>
 
@@ -50,20 +45,21 @@
 
             <!-- About Us Text Section -->
             <div class="col-lg-6">
-                <h3>Tentang Karya Putra Collection</h3>
+                <h3>Tentang Kami</h3>
                 <p class="fs-5 mt-3">
-                    Karya Putra Collection adalah perusahaan yang menyediakan layanan jasa bengkel las listrik khusus untuk kebutuhan aksesoris rumah, kantor, apartemen, dan fasilitas umum. Kami berkomitmen untuk memberikan produk-produk besi berkualitas tinggi dengan desain yang sesuai dengan model dan kebutuhan klien. Sejak berdiri pada tahun 2017, Karya Putra Collection telah melayani berbagai proyek, baik skala kecil maupun besar, dengan mengutamakan keakuratan dalam pembuatan serta ketahanan produk yang kami hasilkan. Tim kami yang berpengalaman siap membantu mewujudkan berbagai macam desain aksesoris besi, mulai dari pagar, railing, hingga berbagai produk besi lainnya, yang dapat disesuaikan dengan estetika dan fungsionalitas ruang yang Anda inginkan.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ante sed sem dictum, eget eleifend ipsum elementum. Maecenas eget eros eu ligula tempor consequat. Aenean hendrerit sapien ut orci fermentum, in dapibus ipsum facilisis. Vivamus ut felis at justo dictum sollicitudin. In hac habitasse platea dictumst. Aliquam vehicula sem ut risus venenatis, non varius odio ultricies. Donec interdum est quis mauris auctor, id volutpat metus convallis. Phasellus venenatis, justo vitae pharetra tincidunt, ipsum magna ultricies nulla, id lobortis nunc sem eget libero. Sed tempus, mauris in interdum fermentum, ipsum leo tincidunt ligula, sit amet dictum orci leo sit amet augue.
+
                 </p>
 
                 <!-- Social Media Links -->
                 <div class="social-media mt-4 d-flex justify-content-md-start justify-content-center gap-4">
-                    <a href="https://wa.me/6285959133189" target="_blank" aria-label="WhatsApp">
+                    <a href="#" target="_blank" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp fs-2" style="color: black;"></i>
                     </a>
-                    <a href="https://www.instagram.com/rizall_260?igsh=Z2pza21pazU2dDkw" target="_blank" aria-label="Instagram">
+                    <a href="#" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram fs-2" style="color: black;"></i>
                     </a>
-                    <a href="https://siplah.blibli.com/merchant-detail/SKPC-0009?itemPerPage=40&page=0&merchantId=SKPC-0009" target="_blank" aria-label="Blibli Merchant">
+                    <a href="#" target="_blank" aria-label="Blibli Merchant">
                         <i class="fa-solid fa-cart-shopping fs-2" style="color: black;"></i>
                     </a>
                 </div>

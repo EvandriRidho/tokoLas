@@ -1,22 +1,22 @@
 .primary-color {
-    background-color: #876445;
+    background-color:  #003366;
 }
 
 .secondary-color {
-    background-color: #CA965C;
+    background-color: #FF6600;
 }
 
 .thirth-color {
-    background-color: #EEC373;
+    background-color: #555555;
 }
 
 .fourth-color {
-    background-color: #F4DFBA;
+    background-color: #FFFFFF;
 }
 
 .banner {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-blue.jpeg');
 }
 
 .highlighted-kategori {
@@ -24,10 +24,16 @@
 }
 
 .kategori-box {
-    background-color: #876445;
-    background-size: cover;
-    background-position: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.kategori-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
 .no-decoration {
     color: black;
     text-decoration: none;
@@ -48,12 +54,12 @@
 
 .banner-produk {
     height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-blue.jpeg');
 }
 
 .banner-tentang-kami {
     height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('../assets/bg-blue.jpeg');
 }
 
 .produk-terkait-image {

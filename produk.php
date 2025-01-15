@@ -43,6 +43,14 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        button {
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF6347;
+        }
+    </style>
 </head>
 <body>
     <?php require 'navbar.php'; ?>
@@ -83,9 +91,9 @@
                                 <div class="card-body"> 
                                     <h5><?php echo htmlspecialchars($produk['nama']); ?></h5>
                                     <p class="card-text text-truncate"><?php echo htmlspecialchars($produk['detail']); ?></p>
-                                    <a href="https://wa.me/6285959133189" target="_blank" class="btn secondary-color">
+                                    <button href="#" target="_blank" class="btn secondary-color">
                                         Detail Price Click Me!
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>

@@ -25,6 +25,9 @@ require "../koneksi.php";
     .alert {
         width: 500px;
     }
+    span {
+        color : #003366;
+    }
 </style>
 <body>
     <div class="main d-flex flex-column justify-content-center align-items-center">
@@ -32,7 +35,7 @@ require "../koneksi.php";
             <form action="" method="POST">
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" class="form-control" autocomplete="off" required>
+                    <input type="text" name="username" id="username" class="form-control"  required>
                 </div>
                 <div class="my-2">
                     <label for="password">Password</label>
