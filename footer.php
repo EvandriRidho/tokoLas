@@ -20,6 +20,6 @@
     </div>
 
     <div class="text-center mt-3">
-    <p class="mb-0">&copy; 2024 Karya Putra Collection. Since 2017</p>
+    <p class="mb-0">&copy; 2025 Toko Las. All Rights Reserved.</p>
     </div>
 </footer>

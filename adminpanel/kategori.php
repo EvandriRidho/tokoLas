@@ -1,10 +1,10 @@
 <?php
-    require "session.php";
-    require "../koneksi.php";
+require "session.php";
+require "../koneksi.php";
 
-    // MENGAMBIL CATEGORI DARI DB   
-    $queryKategori = mysqli_query($con, "SELECT * FROM kategori");
-    $jumlahKategori = mysqli_num_rows($queryKategori);
+// Mengambil kategori dari database
+$queryKategori = mysqli_query($con, "SELECT * FROM kategori");
+$jumlahKategori = mysqli_num_rows($queryKategori);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kategori</title>
-    <link rel="icon" type="image" href="../assets/hammer-solid.svg" />
+    <link rel="icon" type="image/png" href="../assets/hammer-solid.svg" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 </head>
@@ -23,18 +23,18 @@
     }
 </style>
 <body>
-    <?php require "navbar.php" ?>
+    <?php require "navbar.php"; ?>
+    
     <div class="container mt-5">
         <!-- breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">
+                <li class="breadcrumb-item">
                     <a href="index.php" class="no-decoration text-muted">
-                        <i class="fas fa-home"></i> Beranda</a>
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                        Kategori
-                </li>
+                <li class="breadcrumb-item active" aria-current="page">Kategori</li>
             </ol>
         </nav>
 
@@ -51,35 +51,26 @@
                 </div>
             </form>
             <?php   
-                if(isset($_POST['simpan_kategori'])) {
-                    $kategori = htmlspecialchars($_POST['kategori']);
+                if (isset($_POST['simpan_kategori'])) {
+                    $kategori = mysqli_real_escape_string($con, htmlspecialchars($_POST['kategori']));
 
-                    // untuk mengecek apakah kategori sudah ada di database
-                    $queryExist = mysqli_query($con, "SELECT nama FROM kategori WHERE nama = '$kategori'" );
+                    // Mengecek apakah kategori sudah ada di database
+                    $queryExist = mysqli_query($con, "SELECT nama FROM kategori WHERE nama = '$kategori'");
                     $jumlahDataKategoriBaru = mysqli_num_rows($queryExist);
-                    
-                    // Aksi untuk jika data sudah ada atau belum ada
-                    if($jumlahDataKategoriBaru > 0) {
-            ?>
-                        <div class="alert alert-warning mt-3" role="alert">
-                                Kategori Sudah Ada
-                        </div>
-            <?php
+
+                    // Aksi jika data sudah ada atau belum ada
+                    if ($jumlahDataKategoriBaru > 0) {
+                        echo '<div class="alert alert-warning mt-3" role="alert">Kategori Sudah Ada</div>';
                     } else {
                         $querySimpan = mysqli_query($con, "INSERT INTO kategori (nama) VALUES('$kategori')");
-                        if($querySimpan) {
-            ?>
-                                <div class="alert alert-primary mt-3" role="alert">
-                                    Kategori Berhasil Disimpan
-                                </div>
-                                <!-- Untuk Merefresh page setiap 1 detik -->
-                                <meta http-equiv="refresh" content="1; url=kategori.php">
-            <?php
+                        if ($querySimpan) {
+                            echo '<div class="alert alert-primary mt-3" role="alert">Kategori Berhasil Disimpan</div>';
+                            echo '<meta http-equiv="refresh" content="1; url=kategori.php">';
                         } else {
-                            echo mysqli_error($con);
+                            echo '<div class="alert alert-danger mt-3" role="alert">' . mysqli_error($con) . '</div>';
                         }
                     }
-                } 
+                }
             ?>
         </div>
 
@@ -96,25 +87,16 @@
                     </thead>
                     <tbody>
                         <?php
-                            if($jumlahKategori == 0) {
-                        ?>
-                            <tr>
-                                <td colspan="3" class="text-center">Data Kategori tidak tersedia</td>
-                            </tr>
-                        <?php
+                            if ($jumlahKategori == 0) {
+                                echo '<tr><td colspan="3" class="text-center">Data Kategori tidak tersedia</td></tr>';
                             } else {
                                 $number = 1;
-                                while($data = mysqli_fetch_array($queryKategori)) {
-                        ?>
-                                    <tr>
-                                        <td><?php echo $number; ?></td>
-                                        <td><?php echo $data['nama']; ?></td>
-                                        <td>
-                                            <a href="kategori-detail.php?p=<?php echo $data['id']; ?>" 
-                                            class="btn btn-info"><i class="fas fa-search"></i></a>
-                                        </td>
-                                    </tr>
-                        <?php
+                                while ($data = mysqli_fetch_array($queryKategori)) {
+                                    echo '<tr>';
+                                    echo '<td>' . $number . '</td>';
+                                    echo '<td>' . htmlspecialchars($data['nama']) . '</td>';
+                                    echo '<td><a href="kategori-detail.php?p=' . $data['id'] . '" class="btn btn-info"><i class="fas fa-search"></i></a></td>';
+                                    echo '</tr>';
                                     $number++;
                                 }
                             }
